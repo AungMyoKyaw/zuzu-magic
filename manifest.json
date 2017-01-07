@@ -16,6 +16,7 @@
 	}],
 	"permissions": [
 		"storage",
-		"clipboardRead"
+		"clipboardRead",
+		"clipboardWrite"
 	]
 }
