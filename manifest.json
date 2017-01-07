@@ -1,0 +1,21 @@
+{
+	"manifest_version": 2,
+
+	"name": "ZUZU-Magic",
+	"description": "ZG<=>UNI for all",
+	"version": "0.0.1",
+	"icons": {
+		"16": "icon16.png",
+		"48": "icon48.png",
+		"128": "icon128.png"
+	},
+	"content_scripts": [ {
+		"js": ["zuzu.js","uni512zg1.js","zg12uni51.js","detector.js"],
+		"matches": [ "*://*/*" ],
+		"run_at": "document_idle"
+	}],
+	"permissions": [
+		"storage",
+		"clipboardRead"
+	]
+}
