@@ -59,6 +59,14 @@ var zawgyiRegex = "\u1031\u103b" // e+medial ra
 
 var Zawgyi = new RegExp(zawgyiRegex);
 
+var myanmarRegex = /[က-အ]/;
+
+var Myanmar = new RegExp(myanmarRegex);
+
 function isZawgyi(text){
 	return Zawgyi.test(text);
+}
+
+function isMyanmar(text){
+	return Myanmar.test(text);
 }
