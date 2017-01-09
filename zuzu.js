@@ -2,6 +2,9 @@
 var inputText = document.createElement('TEXTAREA');
 document.body.appendChild(inputText);
 inputText.style.display= "block";
+inputText.style.position= "fixed";
+inputText.style.left= "0";
+inputText.style.top= "0";
 inputText.style.width= "0";
 inputText.style.height= "0";
 inputText.style.border= "none";
@@ -11,7 +14,7 @@ inputText.style.resize= "none";
 
 //start when user select all text
 document.addEventListener('keydown',(e)=>{
-	var isCtrlPressed = e.ctrlKey || e.which;
+	var isCtrlPressed = e.ctrlKey || e.metaKey;
 	var isSelectAll = isCtrlPressed && e.keyCode===65;
 	if(isSelectAll){
 		// get active element
