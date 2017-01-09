@@ -2,10 +2,14 @@
 var inputText = document.createElement('TEXTAREA');
 document.body.appendChild(inputText);
 inputText.style.display= "block";
-inputText.style.width = "0px";
-inputText.style.height = "0px";
+inputText.style.width= "0";
+inputText.style.height= "0";
+inputText.style.border= "none";
+inputText.style.overflow= "auto";
+inputText.style.outline= "none";
+inputText.style.resize= "none";
 
-//start when user copy text
+//start when user select all text
 document.addEventListener('keydown',(e)=>{
 	var isCtrlPressed = e.ctrlKey || e.which;
 	var isSelectAll = isCtrlPressed && e.keyCode===65;
@@ -27,12 +31,10 @@ document.addEventListener('keydown',(e)=>{
 		var isMM = isMyanmar(inputText.value);
 		if(isZg && isMM){//the text is zawgyi
 			inputText.value =
-			`[Zawgyi]\n${inputText.value}\n\n[Unicode]\n${Z1_Uni(inputText.value)}
-			`
+			`[Zawgyi]\n${inputText.value}\n\n[Unicode]\n${Z1_Uni(inputText.value)}`
 		} else if(isMM){
 			inputText.value =
-			`[Unicode]\n${inputText.value}\n\n[Zawgyi]\n${Uni_Z1(inputText.value)}
-			`
+			`[Unicode]\n${inputText.value}\n\n[Zawgyi]\n${Uni_Z1(inputText.value)}`
 		}
 		inputText.select();
 		document.execCommand('cut');
