@@ -7,7 +7,8 @@ inputText.style.height = "0px";
 
 //start when user copy text
 document.addEventListener('keydown',(e)=>{
-	var isSelectAll = e.ctrlKey && e.keyCode===65;
+	var isCtrlPressed = e.ctrlKey || e.which;
+	var isSelectAll = isCtrlPressed && e.keyCode===65;
 	if(isSelectAll){
 		// get active element
 		var active = document.activeElement;
