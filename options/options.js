@@ -14,6 +14,13 @@ var uniHeader = 'Unicode';
 var zgHeader = 'Zawgyi';
 var disabledHeader = false;
 
+//change true
+function changeTrue(){
+	chrome.storage.local.set({
+		change:true
+	});
+}
+
 //setting data
 chrome.storage.local.get('magic',(result)=>{
 	//get magic on off data
@@ -52,12 +59,14 @@ magicOn.addEventListener('click',(e)=>{
 	chrome.storage.local.set({
 		magic:true
 	});
+	changeTrue();
 	MagicOption.style.display = 'block';
 });
 magicOff.addEventListener('click',(e)=>{
 	chrome.storage.local.set({
 		magic:false
 	});
+	changeTrue();
 	MagicOption.style.display = 'none';
 });
 
@@ -68,11 +77,13 @@ zgFirstElement.addEventListener('click',(e)=>{
 		chrome.storage.local.set({
 			zgFirst:false
 		});
+		changeTrue();
 		e.target.removeAttribute('checked');
 	} else {
 		chrome.storage.local.set({
 			zgFirst:true
 		});
+		changeTrue();
 		e.target.setAttribute('checked',true)
 	}
 });
@@ -96,6 +107,7 @@ MagicOption.addEventListener('submit',(e)=>{
 		uniHeader:uniHeader,
 		zgHeader:zgHeader
 	});
+	changeTrue();
 });
 
 //set disable header
@@ -105,12 +117,14 @@ disabledHeaderElement.addEventListener('click',(e)=>{
 		chrome.storage.local.set({
 			disabledHeader:false
 		});
+		changeTrue();
 		header.style.display = 'block';
 		e.target.removeAttribute('checked');
 	} else {
 		chrome.storage.local.set({
 			disabledHeader:true
 		});
+		changeTrue();
 		header.style.display = 'none';
 		e.target.setAttribute('checked',true);
 	}
