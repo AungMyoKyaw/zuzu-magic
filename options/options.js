@@ -17,7 +17,7 @@ var disabledHeader = false;
 //setting data
 chrome.storage.local.get('magic',(result)=>{
 	//get magic on off data
-	magic = result.magic ? result.magic : false;
+	magic = result.magic!==undefined ? result.magic : magic;
 	//set checked
 	if(magic){//magic on
 		magicOn.setAttribute('checked',true);
@@ -29,7 +29,7 @@ chrome.storage.local.get('magic',(result)=>{
 });
 
 chrome.storage.local.get('zgFirst',(result)=>{
-	zgFirst = result.zgFirst ? true : false;
+	zgFirst = result.zgFirst!==undefined ? result.zgFirst : zgFirst;
 	if(zgFirst){
 		zgFirstElement.setAttribute('checked',true);
 	} else {
@@ -38,12 +38,12 @@ chrome.storage.local.get('zgFirst',(result)=>{
 });
 
 chrome.storage.local.get('uniHeader',(result)=>{
-	uniHeader = result.uniHeader ? result.uniHeader : 'Unicode';
+	uniHeader = result.uniHeader!==undefined ? result.uniHeader : uniHeader;
 	uniHeaderElement.setAttribute('placeholder',uniHeader);
 });
 
 chrome.storage.local.get('zgHeader',(result)=>{
-	zgHeader = result.zgHeader ? result.zgHeader : 'Zawgyi';
+	zgHeader = result.zgHeader!==undefined ? result.zgHeader : zgHeader;
 	zgHeaderElement.setAttribute('placeholder',zgHeader);
 });
 
@@ -79,7 +79,7 @@ zgFirstElement.addEventListener('click',(e)=>{
 
 //header on/off
 chrome.storage.local.get('disabledHeader',(result)=>{
-	disabledHeader = result.disabledHeader ? true : false;
+	disabledHeader = result.disabledHeader!==undefined ? result.disabledHeader : disabledHeader;
 	if(disabledHeader){
 		disabledHeaderElement.setAttribute('checked',true);
 		header.style.display = 'none';
