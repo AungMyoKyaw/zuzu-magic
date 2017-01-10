@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>ZUZU Magic - Options</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<a href="#">
+		<h1>ZUZU Magic</h1>
+	</a>
+	<form id="magicSwitch">
+		<label for="magicon">
+			<input type="radio" name="magic" id="magicon" class="magic">Magic ON
+		</label>
+		<label for="magicoff">
+			<input type="radio" name="magic" id="magicoff" class="magic">Magic OFF
+		</label>
+	</form>
+	<form id="MagicOption">
+		<label for="zgFirst">
+			<input type="checkbox" id="zgFirst"> Zg First
+		</label>
+		<label for="disabledHeader">
+			<input type="checkbox" id="disabledHeader">Disable Header
+		</label>
+		<div id="header">
+			<label for="uniHeader">
+				Unicode Header
+				<input type="text" id="uniHeader" placeholder="Unicode">
+			</label>
+			<label for="zgHeader">
+				Zawgyi Header
+				<input type="text" id="zgHeader" placeholder="Zawgyi">
+			</label>
+		</div>
+		<button type="submit">Save</button>
+	</form>
+</body>
+	<script src="options.js"></script>
+</html>

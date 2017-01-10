@@ -3,17 +3,23 @@
 
 	"name": "ZUZU-Magic",
 	"description": "ZG<=>UNI for all",
-	"version": "0.0.1",
+	"version": "1.0.0",
 	"icons": {
-		"16": "icon16.png",
-		"48": "icon48.png",
-		"128": "icon128.png"
+		"16": "icon/icon16.png",
+		"48": "icon/icon48.png",
+		"128": "icon/icon128.png"
 	},
 	"content_scripts": [ {
-		"js": ["zuzu.js","uni512zg1.js","zg12uni51.js","detector.js"],
+		"js": [
+			"content-scripts/detector.js",
+			"content-scripts/uni512zg1.js",
+			"content-scripts/zg12uni51.js",
+			"content-scripts/zuzu.js"
+		],
 		"matches": [ "*://*/*" ],
 		"run_at": "document_idle"
 	}],
+	"options_page":"options/options.html",
 	"permissions": [
 		"storage",
 		"clipboardRead",
