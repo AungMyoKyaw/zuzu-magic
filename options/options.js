@@ -29,7 +29,7 @@ chrome.storage.local.get('magic',(result)=>{
 });
 
 chrome.storage.local.get('zgFirst',(result)=>{
-	zgFirst = result.zgFirst ? result.zgFirst : false;
+	zgFirst = result.zgFirst ? true : false;
 	if(zgFirst){
 		zgFirstElement.setAttribute('checked',true);
 	} else {
@@ -68,10 +68,12 @@ zgFirstElement.addEventListener('click',(e)=>{
 		chrome.storage.local.set({
 			zgFirst:false
 		});
+		e.target.removeAttribute('checked');
 	} else {
 		chrome.storage.local.set({
 			zgFirst:true
 		});
+		e.target.setAttribute('checked',true)
 	}
 });
 
