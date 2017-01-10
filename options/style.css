@@ -1,3 +1,9 @@
+body{
+	display: block;
+	width: 50em;
+	margin: auto;
+}
+
 h1 {
 	text-align: center;
 	font-size: 4em;
@@ -92,4 +98,5 @@ button {
 	background: none;
 	border: .2em solid cadetblue;
 	border-radius: 2em;
+	cursor:pointer;
 }
