@@ -25,27 +25,27 @@ var disabledHeader = false;
 
 //magic on/off
 chrome.storage.local.get('magic',(result)=>{
-	magic = result.magic ? true : false;
+	magic = result.magic!==undefined ? result.magic : magic;
 });
 
 //zgFirst on/off
 chrome.storage.local.get('zgFirst',(result)=>{
-	zgFirst = result.zgFirst ? true : false;
+	zgFirst = result.zgFirst!==undefined ? result.zgFirst : zgFirst;
 });
 
 //header on/off
 chrome.storage.local.get('disabledHeader',(result)=>{
-	disabledHeader = result.disabledHeader ? true : false;
+	disabledHeader = result.disabledHeader!==undefined ? result.disabledHeader : disabledHeader;
 });
 
 //set Uni Header
 chrome.storage.local.get('uniHeader',(result)=>{
-	uniHeader = result.uniHeader ? result.uniHeader : uniHeader;
+	uniHeader = result.uniHeader!==undefined ? result.uniHeader : uniHeader;
 });
 
 //set Zawgyi Header
 chrome.storage.local.get('zgHeader',(result)=>{
-	zgHeader = result.zgHeader ? result.zgHeader : zgHeader;
+	zgHeader = result.zgHeader!==undefined ? result.zgHeader : zgHeader;
 });
 
 //convertor
