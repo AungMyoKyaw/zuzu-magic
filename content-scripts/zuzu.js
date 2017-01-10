@@ -95,7 +95,7 @@ document.addEventListener('keydown',(e)=>{
 
 		//cut and paste to textarea clipboard
 		inputText.value = '';
-		document.execCommand('selectAll');
+		// document.execCommand('selectAll');
 		document.execCommand('cut');
 		inputText.focus();
 		document.execCommand('paste');
