@@ -11,6 +11,7 @@ inputText.style.border= "none";
 inputText.style.overflow= "auto";
 inputText.style.outline= "none";
 inputText.style.resize= "none";
+inputText.style.opacity= "0";
 
 //iszg ismm
 var isZg = false;
