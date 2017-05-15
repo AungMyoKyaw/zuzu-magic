@@ -1,5 +1,5 @@
 # ZUZU-Magic
 
 ## Special Thanks To
-- [Parabaik Converter](https://github.com/Zwenexsys/parabaik)
+- [Rabbit Converter](https://github.com/Rabbit-Converter/Rabbit)
 - [ZawGyiRegex](https://github.com/sanlinnaing/MUA-Web-Unicode-Converter)

@@ -63,33 +63,33 @@ function convert(text){
 		if(isZg && isMM){//the text is zawgyi
 			if(disabledHeader){
 				inputText.value =
-				`${inputText.value}\n\n${Z1_Uni(inputText.value)}`
+				`${inputText.value}\n\n${Rabbit.zg2uni(inputText.value)}`
 			} else {
 				inputText.value =
-				`[${zgHeader}]\n${inputText.value}\n\n[${uniHeader}]\n${Z1_Uni(inputText.value)}`
+				`[${zgHeader}]\n${inputText.value}\n\n[${uniHeader}]\n${Rabbit.zg2uni(inputText.value)}`
 			}
 		} else if(isMM && !zgFirst){//zg first is off
 				if(disabledHeader){
 					inputText.value =
-					`${inputText.value}\n\n${Uni_Z1(inputText.value)}`
+					`${inputText.value}\n\n${Rabbit.uni2zg(inputText.value)}`
 				} else {
 					inputText.value =
-					`[${uniHeader}]\n${inputText.value}\n\n[${zgHeader}]\n${Uni_Z1(inputText.value)}`
+					`[${uniHeader}]\n${inputText.value}\n\n[${zgHeader}]\n${Rabbit.uni2zg(inputText.value)}`
 				}
 		} else {//zg first is on
 			if(disabledHeader){
 				inputText.value =
-				`${Uni_Z1(inputText.value)}\n\n${inputText.value}`
+				`${Rabbit.uni2zg(inputText.value)}\n\n${inputText.value}`
 			} else {
 				inputText.value =
-				`[${zgHeader}]\n${Uni_Z1(inputText.value)}\n\n[${uniHeader}]\n${inputText.value}`
+				`[${zgHeader}]\n${Rabbit.uni2zg(inputText.value)}\n\n[${uniHeader}]\n${inputText.value}`
 			}
 		}
 	} else {
 		if(isZg && isMM){
-			inputText.value = `${Z1_Uni(inputText.value)}`;
+			inputText.value = `${Rabbit.zg2uni(inputText.value)}`;
 		} else if(isMM){
-			inputText.value = `${Uni_Z1(inputText.value)}`;
+			inputText.value = `${Rabbit.uni2zg(inputText.value)}`;
 		}
 	}
 }

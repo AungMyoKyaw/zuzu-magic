@@ -12,8 +12,7 @@
 	"content_scripts": [ {
 		"js": [
 			"content-scripts/detector.js",
-			"content-scripts/uni512zg1.js",
-			"content-scripts/zg12uni51.js",
+			"content-scripts/rabbit.js",
 			"content-scripts/zuzu.js"
 		],
 		"matches": [ "*://*/*" ],
