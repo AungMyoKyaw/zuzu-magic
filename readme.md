@@ -24,7 +24,7 @@ git clone git@github.com:AungMyoKyaw/zuzu-magic.git
 
 ## LICENSE
 
-[MIT](./LICENSE) @ [Aung Myo Kyaw](https://github.com/AungMyoKyaw)
+MIT © [Aung Myo Kyaw](https://github.com/AungMyoKyaw)
 
 [contri]: https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat-square
 [contri-url]: https://github.com/AungMyoKyaw/zuzu-magic/issues
