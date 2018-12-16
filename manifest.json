@@ -1,36 +1,34 @@
 {
-	"manifest_version": 2,
+  "manifest_version": 2,
 
-	"name": "ZUZU-Magic",
-	"description": "ZG<=>UNI for all",
-	"version": "2.0.1",
-	"icons": {
-		"16": "icon/icon16.png",
-		"48": "icon/icon48.png",
-		"128": "icon/icon128.png"
-	},
-	"content_scripts": [ {
-		"js": [
-			"content-scripts/detector.js",
-			"content-scripts/rabbit.js",
-			"content-scripts/zuzu.js"
-		],
-		"matches": [ "*://*/*" ],
-		"run_at": "document_idle"
-	}],
-	"options_page":"options/options.html",
-	"browser_action": {
+  "name": "ZUZU-Magic",
+  "description": "ZG<=>UNI for all",
+  "version": "2.0.1",
+  "icons": {
+    "16": "icon/icon16.png",
+    "48": "icon/icon48.png",
+    "128": "icon/icon128.png"
+  },
+  "content_scripts": [
+    {
+      "js": [
+        "content-scripts/detector.js",
+        "content-scripts/rabbit.js",
+        "content-scripts/zuzu.js"
+      ],
+      "matches": ["*://*/*"],
+      "run_at": "document_idle"
+    }
+  ],
+  "options_page": "options/options.html",
+  "browser_action": {
     "default_icon": {
       "16": "icon/icon16.png",
-			"48": "icon/icon48.png",
-			"128": "icon/icon128.png"
+      "48": "icon/icon48.png",
+      "128": "icon/icon128.png"
     },
     "default_title": "ZUZU-Magic",
     "default_popup": "options/options.html"
   },
-	"permissions": [
-		"storage",
-		"clipboardRead",
-		"clipboardWrite"
-	]
+  "permissions": ["storage", "clipboardRead", "clipboardWrite"]
 }

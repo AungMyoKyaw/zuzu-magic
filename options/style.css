@@ -1,102 +1,102 @@
-body{
-	display: block;
-	width: 50em;
-	margin: auto;
+body {
+  display: block;
+  width: 50em;
+  margin: auto;
 }
 
 h1 {
-	text-align: center;
-	font-size: 4em;
-	font-weight: bold;
-	font-family: sans-serif;
-	color: cadetblue;
-	margin-top:.4em;
+  text-align: center;
+  font-size: 4em;
+  font-weight: bold;
+  font-family: sans-serif;
+  color: cadetblue;
+  margin-top: 0.4em;
 }
 
-a{
-	text-decoration: none;
+a {
+  text-decoration: none;
 }
 
 form#magicSwitch {
-	display: block;
-	width: 10em;
-	margin: auto;
-	font-size: 2em;
+  display: block;
+  width: 10em;
+  margin: auto;
+  font-size: 2em;
 }
 
 input#magicon {
-	line-height: 2em;
-	height: 2em;
-	margin-right: 1em;
-	cursor: pointer;
+  line-height: 2em;
+  height: 2em;
+  margin-right: 1em;
+  cursor: pointer;
 }
 input#magicoff {
-	line-height: 2em;
-	height: 2em;
-	margin-right: 1em;
-	cursor:pointer;
+  line-height: 2em;
+  height: 2em;
+  margin-right: 1em;
+  cursor: pointer;
 }
 
 form#MagicOption {
-	display: block;
-	width: 20em;
-	margin: auto;
-	margin-top: 1em;
-	font-size: 2em;
+  display: block;
+  width: 20em;
+  margin: auto;
+  margin-top: 1em;
+  font-size: 2em;
 }
 
 input#zgFirst {
-	line-height: 2em;
-	height: 2em;
-	margin-right: 1em;
-	cursor: pointer;
+  line-height: 2em;
+  height: 2em;
+  margin-right: 1em;
+  cursor: pointer;
 }
 
 input#disabledHeader {
-	line-height: 2em;
-	height: 2em;
-	margin-right: 1em;
-	cursor: pointer;
+  line-height: 2em;
+  height: 2em;
+  margin-right: 1em;
+  cursor: pointer;
 }
 
 div#header {
-	/* display: block; */
-	margin-top: 1em;
-	margin: 1em auto;
-	cursor: pointer;
+  /* display: block; */
+  margin-top: 1em;
+  margin: 1em auto;
+  cursor: pointer;
 }
 
 input#uniHeader {
-	line-height: 2em;
-	height: 2em;
-	display: inline-block;
-	margin-left: .4em;
-	width: 60%;
-	margin-bottom: 1em;
+  line-height: 2em;
+  height: 2em;
+  display: inline-block;
+  margin-left: 0.4em;
+  width: 60%;
+  margin-bottom: 1em;
 }
 
 input#zgHeader {
-	display: inline-block;
-	line-height: 2em;
-	height: 2em;
-	width: 60%;
-	margin-left: 1.5em;
-	margin-top: 1em;
+  display: inline-block;
+  line-height: 2em;
+  height: 2em;
+  width: 60%;
+  margin-left: 1.5em;
+  margin-top: 1em;
 }
 
-label{
-	display: block;
-	width: 100%;
-	cursor: pointer;
+label {
+  display: block;
+  width: 100%;
+  cursor: pointer;
 }
 
 button {
-	display: block;
-	margin: 1em auto;
-	width: 100%;
-	font-size: 1.2em;
-	background: none;
-	border: .2em solid cadetblue;
-	border-radius: 2em;
-	cursor:pointer;
+  display: block;
+  margin: 1em auto;
+  width: 100%;
+  font-size: 1.2em;
+  background: none;
+  border: 0.2em solid cadetblue;
+  border-radius: 2em;
+  cursor: pointer;
 }
